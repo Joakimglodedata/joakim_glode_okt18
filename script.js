@@ -37,3 +37,18 @@ document.addEventListener("DOMContentLoaded", function () {
     cardImage.src = cardInformation[0].cardImage
     cardImage.alt = cardInformation[0].cardImageDescription
 })
+
+// 
+// 
+
+// Nested arrays in objects
+
+const shoppingCart = {
+    fruits: [
+        {apple: ["Red apple", "Green apple", "Yellow apple"]
+    },
+    "Banana", "Orange"],
+    vegetable: ["Potato", "Carrot", "Brusselsprouts"]
+}
+console.log(shoppingCart)
+console.log(shoppingCart.fruits[0].apple[0])
