@@ -1,10 +1,6 @@
 // Basic array / Flat array
 // [] square bracket 
 
-const fruitBowl = ["Apple", "Banana", "Orange"];
-console.log(fruitBowl)
-console.log(fruitBowl[0])
-
 const character = ["Julius", "Bard", 99, false]
 console.log("Min karakter " + character[0] + " er ein " + character[1] + " på level " + character[2])
 
@@ -52,3 +48,19 @@ const shoppingCart = {
 }
 console.log(shoppingCart)
 console.log(shoppingCart.fruits[0].apple[0])
+
+const fruitBowl = ["Apple", "Banana", "Orange"];
+// console.log(fruitBowl)
+// console.log(fruitBowl[0])
+
+for (let i = 0; i < fruitBowl.length; i++) {
+    console.log(fruitBowl[i])
+}
+
+fruitBowl.forEach((fruit) => {
+    console.log(fruit)
+})
+
+const fruitBowlMap = fruitBowl.map((fruit) => "One " +  fruit
+)
+console.log(fruitBowlMap)
